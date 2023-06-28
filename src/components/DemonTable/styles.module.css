@@ -1,0 +1,104 @@
+.logoContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo{
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+table{
+    max-width: 1000px;
+    font-size: 0.85rem;
+}
+
+table>thead>tr>th:nth-child(4){
+    display: flex;
+    justify-content: center;
+}
+
+table>tbody>tr>td:nth-child(4){
+    display: flex;
+    justify-content: center;
+}
+
+.demonTableBody td {
+    padding: 0 10px;
+}
+
+.sortBtn{
+    width: 100%;
+    position: relative;
+    padding: 2px;
+    background-color: transparent;
+    color: #fff;
+}
+.sortBtn:after{
+    content: "▼";
+    position: absolute;
+    width: 2px;
+    height: 9px;
+    right: 18px;
+    top: 0.5rem;
+    color: #bebebe;
+    font-weight: bold;
+    text-align: center;
+}
+.sortBtn.up:after{
+    content: none;
+}
+.sortBtn:before{
+    content: "▲";
+    position: absolute;
+    width: 2px;
+    height: 9px;
+    right: 18px;
+    top: -0.3rem;
+    color: #bebebe;
+    font-weight: bold;
+    text-align: center;
+}
+.sortBtn.down:before{
+    content: none;
+}
+
+.tableBlock{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 10%;
+}
+
+.hidden:before,
+.hidden:after{
+    display: none;
+}
+
+.stickyHeader{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.stickyHeader>tr{
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.stickyHeader tr:nth-child(3){
+    border-top: 0;
+}
+
+.headerBorder{
+    height: 1px;
+    padding: 0 !important;
+    background-color: #fff !important;
+}
+
+.headerBorderTop{
+    height: 1px;
+    padding: 0 !important;
+    background-color: rgb(55, 59, 62) !important;
+}
