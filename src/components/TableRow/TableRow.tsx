@@ -1,11 +1,21 @@
 import styles from './styles.module.css'
-import { useState } from "react";
+import { FunctionComponent, useState } from "react";
 
-export const TableRow = ({race, lvl, name, link, usable, i, hide}) => {
+interface TableRowProps {
+    race: string,
+    lvl: number,
+    name: string,
+    link: string,
+    usable: boolean,
+    i: number,
+    hide: boolean
+}
+
+export const TableRow: FunctionComponent<TableRowProps> = ({race, lvl, name, link, usable, i, hide}) => {
     const [isUsable, setIsUsable] = useState(usable);
 
     function swapUsable() {
-        const items = JSON.parse(localStorage.getItem("demon-list"));
+        const items = JSON.parse(localStorage.getItem("demon-list") || '{}');
         items[i] = !isUsable
 
         localStorage.setItem("demon-list",
