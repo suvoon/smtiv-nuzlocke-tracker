@@ -3021,8 +3021,6 @@ export const DemonTable = () => {
     const {sortBy, switchSortBy} = useSortBy();
     const [hide, setHide] = useState(false);
 
-    console.log(sortBy)
-
     return (
         <>
             <div className={styles.logoContainer}>
