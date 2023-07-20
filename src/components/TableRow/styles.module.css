@@ -3,18 +3,18 @@
     color: #6bf;
 }
 
-.inactive{
-    position: relative;
+.inactive * {
+    color: red;
 }
-.inactive:after{
-    content: "";
-    position: absolute;
-    width: 69%;
-    height: 2px;
-    top: 0.7rem;
-    left: 0;
-    background-color: #ff3434;
-}
+/*.inactive:after{*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    width: 69%;*/
+/*    height: 2px;*/
+/*    top: 0.7rem;*/
+/*    left: 0;*/
+/*    background-color: #ff3434;*/
+/*}*/
 
 .hidden{
     display: none;
@@ -31,4 +31,43 @@
 
 .statusBtn:hover{
     color: #a8a8a8;
+}
+
+.expandContainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.locationBtn{
+    padding: 0;
+    background-color: transparent;
+    color: #fff;
+}
+
+.locationList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    z-index: 10;
+    top: 1.5rem;
+    width: 100%;
+    padding: 0.6rem 0.3rem 0.1rem 0.3rem;
+    background-color: rgba(22, 22, 22, 0.8);
+}
+
+.locationList li {
+    border: 1px solid #fff;
+    padding: 3px;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.notRecruitable{
+    padding: 2px;
 }

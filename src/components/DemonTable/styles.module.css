@@ -17,6 +17,8 @@ table{
 table>thead>tr>th:nth-child(4){
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 43px;
 }
 
 table>tbody>tr>td:nth-child(4){
