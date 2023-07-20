@@ -14043,7 +14043,7 @@ body {
     margin: 0;
     min-width: 320px;
     min-height: 100vh;
-    background: url(/Tokyo-8a9a5e3b.webp) no-repeat center center fixed
+    background: url("Tokyo-8a9a5e3b.webp") no-repeat center center fixed
 }
 
 button {
